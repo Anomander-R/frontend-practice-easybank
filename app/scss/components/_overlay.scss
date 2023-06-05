@@ -1,0 +1,13 @@
+@use '../util';
+
+.overlay{
+    z-index: -5;
+    opacity: 0;
+    position: fixed;
+    top: util.rem(80px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--overlay-background);
+}
+

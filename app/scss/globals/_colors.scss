@@ -1,0 +1,24 @@
+:root{
+    --background-color: var(--neutral-grayish-blue-light);
+    --text-color: var(--neutral-grayish-blue);
+    // Primary colors
+    --primary-dark-blue: hsl(233, 26%, 24%);
+    --primary-lime-green: hsl(136, 65%, 51%);
+    --primary-bright-cyan: hsl(192, 70%, 51%);
+    // Neutral colors
+    --neutral-grayish-blue: hsl(233, 8%, 62%);
+    --neutral-grayish-blue-light: hsl(220, 16%, 96%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --attribution-color: hsl(228, 45%, 44%);
+    // !Font Sizes
+    --font-sm: 0.875rem; //14px
+    --font-md: 1.125rem; //18px
+
+    //Overlay colors & gradients
+    --overlay-start: hsla(233, 26%, 24%, 0.8);
+    --overlay-end: hsla(233, 26%, 24%, 0.05);
+    --linear-background: linear-gradient(270deg, var(--primary-bright-cyan), var(--primary-lime-green));
+    --overlay-background: linear-gradient(180deg, var(--overlay-start), var(--overlay-end));
+}

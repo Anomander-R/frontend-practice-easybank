@@ -1,0 +1,9 @@
+@use '../util';
+
+.attribution { 
+    font-size: util.rem(11); 
+    text-align: center; 
+    >a{
+        color: var(--attribution-color);
+    }
+}

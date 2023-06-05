@@ -1,0 +1,31 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        z-index: 5;
+    }
+    99%{
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+        z-index: -5;
+    }
+}
+
+.fade-in{
+    animation: fade-in 300ms ease-in-out forwards;
+}
+
+.fade-out{
+    animation: fade-out 300ms ease-in-out forwards;
+}

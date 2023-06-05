@@ -1,0 +1,15 @@
+@use 'breakpoints' as br;
+
+.hide-for-sm{
+    //Everything smaller from 1024px is hidden
+    @include br.breakpoint-down(lg){
+        display: none;
+    }
+}
+
+.hide-for-lg{
+    //Everything bigger from 1024px is hidden
+    @include br.breakpoint-up(lg){
+        display: none;
+    }
+}

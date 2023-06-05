@@ -1,0 +1,50 @@
+@use '../util';
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: util.rem(40px);
+    max-width: util.rem(1000);
+    width: min(100%, util.rem(1000)); 
+    //Line 6 and 7 have same function to limit page width to 1000 px
+    margin-inline: auto;
+
+        @include util.breakpoint-up(lg){
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+        }
+
+    &__main{
+        padding: util.rem(20);
+        background-color: hsl(240, 97%, 11%);
+        @include util.breakpoint-up(md){
+            background-color: hsl(240, 97%, 20%);
+        }
+        @include util.breakpoint-up(lg){
+            background-color: hsl(240, 97%, 50%);
+        }
+    }
+
+    &__sidebar{
+        padding: util.rem(20);
+        
+
+        @include util.breakpoint-down(md){
+            text-align: center;
+        }
+
+        @include util.breakpoint-down(sm){
+            text-align: right;
+        }
+    }
+
+    &__widget{
+        background-color: hsl(300, 97%, 41%);
+        padding: util.rem(16);
+
+        &.green{
+            background-color: hsl(120, 100%, 12%);
+        }
+    }
+}
