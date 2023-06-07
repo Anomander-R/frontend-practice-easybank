@@ -12,11 +12,17 @@
 </head>
 <body>
 
-  <header class="header" id="header">
-    <div class="overlay" id="overlay">
-
+  <header class="header sticky" id="header">
+    <div class="overlay container" id="overlay">
+      <div class="header__menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
     </div>
-    <nav class="flex flex__between flex__align-center">
+    <nav class="flex flex__between flex__align-center container">
       <a href="/" class="header__logo">
         <img src="/app/assets/images/logo.svg" alt="Easybank"/>
       </a>
@@ -34,9 +40,17 @@
       </div>
       <button type="button" class="button header__cta hide-for-sm">Request Invite</button>
     </nav>
+    <!-- <div class="header__menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div> -->
   </header>
    
 
+<main class="container">
   Request Invite
 
 
@@ -107,6 +121,7 @@
   Request Invite
 
   © Easybank. All Rights Reserved
+</main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

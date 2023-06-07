@@ -19,8 +19,28 @@ body{
     line-height: 1.3;
     background-color: var(--background-color);
     color: var(--text-color);
+    &.noscroll{
+        overflow: hidden;
+    }
 }
 
 a, a:visited, a:hover{
     text-decoration: none;
+}
+
+.container{
+    padding-left: util.rem(24px);
+    padding-right: util.rem(24px);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+main{
+    margin-top: util.rem(80px);
 }
